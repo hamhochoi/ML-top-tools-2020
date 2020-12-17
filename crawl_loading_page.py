@@ -1,15 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-#from pyvirtualdisplay import Display
 from bs4 import BeautifulSoup
 import time
 
 prefix_url = 'https://paperswithcode.com'
 
-def correct_url(url): 
-	if not url.startswith("http://") and not url.startswith("https://"):
-		url = "http://" + url
-	return url
 
 def scrollDown(browser, numberOfScrollDowns):
 	body = browser.find_element_by_tag_name("body")
