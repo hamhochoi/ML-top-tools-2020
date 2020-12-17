@@ -61,6 +61,7 @@ public class WordCount {
       context.write(key, result);
     }
   }
+  
 	
   public static void main(String[] args) throws Exception{
     Configuration conf = new Configuration();
